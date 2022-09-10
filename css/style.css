@@ -89,7 +89,7 @@ button:hover, button:active {
  
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .wrapper {
     max-width: 1440px;
     display: flex;
