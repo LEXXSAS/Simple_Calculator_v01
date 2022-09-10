@@ -1,54 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator v 0.2</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="wrapper">
-  <header class="header"></header>
-<!--   <hr>-->
-<!--  <div class="wrapper_calc_and_head">-->
-   <div class="header_htwo">
-   <h2>Простой калькулятор</h2>
-   <p>версия 0.2<p>
-   </div>
-<!--   <hr>-->
-   <br>
-<!--   <br>-->
-  <div class="wrapper_calc">
-   <input id="num1">
-   <br>
-   
-   <div class="btns" id="operator_btns">
-       <button class="btn" id="plus" onclick="op='+'">+</button>
-       <button class="btn" id="minus" onclick="op='-'">-</button>
-       <button class="btn" id="times" onclick="op='*'">x</button>
-       <button class="btn" id="divide" onclick="op='/'">:</button>
-   </div>
-   <br>
-   
-   <input id="num2">
-   <br>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-   
-   <button class="entering" id="enter">Посчитать</button>
-   <br>
-   
-   <div class="all_result">
-       <p class="text_result">Результат:</p>
-       <p class="result_first" id="result"></p>
-   </div>
-   <div class="all_result">
-       <p class="text_result">Полученные значения:</p>
-       <p class="result_two" id="result_two"></p>
-   </div>
-   </div>
-   </div>
-<!--   </div>-->
-    <script src="js/main.js"></script>
-</body>
-</html>
+body {
+/*    background-color: antiquewhite;*/
+    font-family: sans-serif;
+    font-size: small;
+    height: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+/*
+    overflow-y: hidden;
+    padding-right: 15px;
+*/
+}
+
+/*
+body.active {
+      height: 100vh;
+      overflow-y: hidden;
+      padding-right: 15px;
+}
+*/
+
+/*
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin: 25px;
+}
+
+.wrapper_calc {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    
+}
+*/
+
+.header_htwo {
+    margin-bottom: 10px;
+}
+
+h2 {
+/*    font-size: 14px;*/
+    color: #4ea78c;
+}
+
+p {
+    color: #175743;
+}
+
+
+/*
+.btn {
+    padding: 0px 12px;
+}
+*/
+
+.btns {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.all_result {
+    display: flex;
+    padding-bottom: 4px;
+    gap: 5px;
+}
+
+.all_result:last-child {
+    flex-direction: column;
+}
+
+button {
+    background-color: #4ea78c;
+    border: 2px solid #175743;
+}
+
+button:hover, button:active {
+    background-color: #6defc7;
+}
+
+/*
+.wrapper_calc_and_head {
+    display: inline-block;
+    background-color: #fff;
+    border: 4px solid #4ea78c;
+    box-shadow: 
+        15px 15px 0 -4px white,
+        25px 25px #4ea78c;
+    padding: 10px;
+}
+*/
+
+.result_first {
+ 
+}
+
+
+
+    .wrapper {
+/*    max-width: 1440px;*/
+    max-width: 350px;
+/*    align-items: center;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin: 25px;
+    border: 4px solid #4ea78c;
+    padding: 12px 12px;
+    padding-bottom: 45px;
+}
+
+    .wrapper_calc {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+    
+    .btn {
+    padding: 4px 24px;
+}
+    h2 {
+        font-size: 24px;
+/*        padding-bottom: 4px;*/
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    button {
+        font-size: 16px;
+    }
+    .entering {
+        padding: 4px 24px;
+    }
+    .wrapper_calc_and_head {
+/*    display: inline-block;*/
+    background-color: #fff;
+    border: 4px solid #4ea78c;
+    box-shadow: 
+        15px 15px 0 -4px white,
+        25px 25px #4ea78c;
+    padding: 28px 14px;
+    height: 330px;
+}
+
+input {
+    padding: 4px;
+    font-size: 16px;
+}
