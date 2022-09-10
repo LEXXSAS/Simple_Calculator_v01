@@ -23,6 +23,7 @@ body.active {
 }
 */
 
+/*
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -35,13 +36,14 @@ body.active {
     max-width: 150px;
     
 }
+*/
 
 .header_htwo {
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 14px;
+/*    font-size: 14px;*/
     color: #4ea78c;
 }
 
@@ -50,9 +52,11 @@ p {
 }
 
 
+/*
 .btn {
     padding: 0px 12px;
 }
+*/
 
 .btns {
     display: flex;
@@ -75,6 +79,7 @@ button:hover, button:active {
     background-color: #6defc7;
 }
 
+/*
 .wrapper_calc_and_head {
     display: inline-block;
     background-color: #fff;
@@ -84,6 +89,7 @@ button:hover, button:active {
         25px 25px #4ea78c;
     padding: 10px;
 }
+*/
 
 .result_first {
  
