@@ -9,6 +9,8 @@ body {
     font-family: sans-serif;
     font-size: small;
     height: 100%;
+    display: flex;
+    justify-content: center;
 /*
     overflow-y: hidden;
     padding-right: 15px;
@@ -67,7 +69,12 @@ p {
 
 .all_result {
     display: flex;
+    padding-bottom: 4px;
     gap: 5px;
+}
+
+.all_result:last-child {
+    flex-direction: column;
 }
 
 button {
@@ -98,14 +105,17 @@ button:hover, button:active {
 
 
     .wrapper {
-    max-width: 1440px;
+/*    max-width: 1440px;*/
+    max-width: 350px;
+/*    align-items: center;*/
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 0 auto;
     margin: 25px;
 }
 
-.wrapper_calc {
+    .wrapper_calc {
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -117,6 +127,7 @@ button:hover, button:active {
 }
     h2 {
         font-size: 24px;
+/*        padding-bottom: 4px;*/
     }
     
     p {
