@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator v 0.1</title>
+    <title>Simple Calculator v 0.2</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper">
   <header class="header"></header>
 <!--   <hr>-->
-  <div class="wrapper_calc_and_head">
+<!--  <div class="wrapper_calc_and_head">-->
    <div class="header_htwo">
    <h2>Простой калькулятор</h2>
-   <p>версия 0.1<p>
+   <p>версия 0.2<p>
    </div>
 <!--   <hr>-->
    <br>
@@ -35,22 +35,20 @@
    <br>
 
    
-   <button class="entering" onclick="func()">Посчитать</button>
+   <button class="entering" id="enter">Посчитать</button>
    <br>
    
    <div class="all_result">
        <p class="text_result">Результат:</p>
        <p class="result_first" id="result"></p>
    </div>
-<!--
    <div class="all_result">
-       <p class="text_result">Результат второй:</p>
-       <p class="result_first" id="result_two"></p>
-   </div>
--->
+       <p class="text_result">Полученные значения:</p>
+       <p class="result_two" id="result_two"></p>
    </div>
    </div>
    </div>
+<!--   </div>-->
     <script src="js/main.js"></script>
 </body>
 </html>
