@@ -1,4 +1,5 @@
 var op;
+var array = [];
 
 function func() {
     
@@ -22,7 +23,36 @@ function func() {
             break;
     }
     
+    var res = result;
     
-    document.getElementById("result").innerHTML =  result;
+
     
+    if (res === result && !res.isNaN) {
+        document.getElementById("result").innerHTML =  res;
+        return array.push(res);
+    }
+    else {
+        alert("Введите число");
+    }
+    
+
+    
+    
+    
+//    if (func.isRun) {
+//        return false;
+//    }
+//    document.getElementById("result_two").innerHTML =  res;
+//    func.isRun = true;
+    
+}
+
+
+let enter = document.getElementById("enter");
+enter.addEventListener('click', func);
+enter.addEventListener('click', arrayConsole);
+
+function arrayConsole() {
+//    console.log(array);
+    document.getElementById("result_two").innerHTML =  array.join('; ');
 }
